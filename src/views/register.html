@@ -38,7 +38,7 @@
             <li><a href="#"> Ayuda </a></li>
         </ul>
         <ul class="right-navbar">    
-            <li><a href="#"> Creá tu cuentaaaaaaaaaaaaaaaaaaaaaaaaaaa  <i class="fa-regular fa-id-card"></i> </a></li>
+            <li><a href="#"> Creá tu cuenta <i class="fa-regular fa-id-card"></i> </a></li>
             <li><a href="#"> Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a></li>
             <li><a href="#"> Mis compras  <i class="fa-solid fa-basket-shopping"></i> </a></li>          
         </ul>
@@ -50,36 +50,56 @@
     <img class="w-100" src="/images/img-home-banner.jpg" alt="Promoción fiestas" />
 
 
-    <h1>Login</h1>
+    <h1 class="copy-header">Registrate!</h1>
+
+
     <form action="index.php" method="post">
-    <div>
-      <label>Nombre</label>
-      <input type="text" name="name" placeholder="Nombre">
+        <div>
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" name="nombre" id="nombre" pattern="[a-zA-Z ]" />
+          </div>
+          <div>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" />
+          </div>
+          <div>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" />
+          </div>
+          <div>
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" name="domicilio" id="domicilio" />
+          </div>
+          <div>
+            <label for="perfil">Perfil del usuario:</label>
+            <input type="radio" name="perfil" value="comprar" /> Comprar
+            <input type="radio" name="perfil" value="vender" /> Vender
+          </div>
+          <div>
+            <label for="categorias">Categorías de interés:</label>
+            <input type="checkbox" name="categorias[]" value="electro" /> Electro
+            <input type="checkbox" name="categorias[]" value="moda" /> Moda
+            <input type="checkbox" name="categorias[]" value="hogar" /> Hogar
+            <input type="checkbox" name="categorias[]" value="jugueteria" /> Juguetería
+            <input type="checkbox" name="categorias[]" value="vida_sana" /> Vida sana
+          </div>
+          <div>
+            <label for="foto">Foto de usuario:</label>
+            <input type="file" name="foto" id="foto" />
+          </div>
+          <div>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña" />
+          </div>
+          <div>
+            <label for="confirmar_contraseña">Confirmar contraseña:</label>
+            <input type="password" name="confirmar_contraseña" id="confirmar_contraseña" />
+          </div>
+          <div>
+          <input type="submit" value="Enviar" class="boton-formulario"/>
+          <input type="reset" value="Borrar" class="boton-formulario"/>
+        </div>
 
-      <label>Nombre</label>
-      <input type="text" name="lastname" placeholder="Apellido">
-
-      <label>Nombre</label>
-      <input type="email" name="email" placeholder="Correo electrónico">
-
-      <label>Nombre</label>
-      <input type="submit" value="Ingresar">
-
-      <label>Descripcion producto</label>
-      <textarea name="Descripcion"> </textarea>
-
-      <button type="submit"> Enviar</button>
-      <button type="reset"> Borrar</button>
-    </div>
-
-    <div>
-        <label>Categorias</label>
-        <select name="Categorias">
-             <option value="cat1">Hogar</option>
-             <option value="cat2">Eklectro</option>     
-        </select>
-
-    </div>
     </form>
 
 

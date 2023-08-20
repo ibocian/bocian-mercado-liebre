@@ -25,6 +25,13 @@
   color: #39b54a;
 }
 
+.icon-footer{
+  color: #1259c3
+ }
+ .icon-footer:hover{
+  color: #ea980a;
+ }
+
 body{
     font-family: "Roboto";
 }
@@ -51,11 +58,13 @@ h3{
   }
 
 footer{
+  background-color: #ffffff;
     text-align: center;
-    font-size: 2em;
+    font-size: 20px;
     margin-bottom: 10px;
    justify-content: center;
-    align-items: center
+    align-items: center;
+    padding: 10px 3px ;
 }
 
 .nav-link {
@@ -157,10 +166,11 @@ footer{
 .main-header {
   background-color: #EAC926;
   padding: 10px;
+  
 }
 
 .main-header-top-bar {
-  
+
  justify-content: space-between;
  width: 100%;
   padding: 10px;
@@ -168,6 +178,7 @@ footer{
 
 .barra-position{
   flex: 1;
+  border: 20px;
 }
 
 .logo-position{
@@ -222,6 +233,11 @@ footer{
   position: absolute;
   right: 15px;
   top: -15px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.truck-icon:hover {
+  transform: rotate(-90deg);
 }
 
 .main-navbar ul {
@@ -242,9 +258,93 @@ footer{
   display: none;
 }
 
+.boton-formulario{
+  background-color: #03264C;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;  
+}
+
+.boton-formulario:hover{
+  background-color: #0022AA;
+}
+
+
+
+
+form {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+
+input[type="radio"] {
+   display: flex;
+   flex-wrap: wrap;
+  width: 100%;
+}
+
+
+
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+
+input [type="submit"] {
+  margin-top: 10px;
+  background-color: #1259c3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+
+
+
+
+
  
   /* tablet */
-  @media (min-width: 481px) { 
+  @media (min-width: 761px) { 
     .md-product-shadow {
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
       }
@@ -284,6 +384,13 @@ footer{
 
   .product-shadow {
     box-shadow: none;
+  }
+  .description{
+    display: none;
+  }
+
+  .product:hover .description{
+    display: block;
   }
 }
 
