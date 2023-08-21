@@ -15,22 +15,26 @@
     <link rel="stylesheet", href="/css/styles.css">
     <title>Mercado Liebre</title>
 </head>
+
 <body class="bg-light-gray">
     <header class="bg-yellow main-header">
         <div class="main-header-top-bar">
+            
             <h1>
-              <img src="/images/logo-mercado-liebre.svg" alt="Logo-Mercado-Liebre" class="logo">
+              <img src="/images/logo-mercado-liebre.svg" alt="Logo-Mercado-Liebre" class="logo logo-position" href="/home">
             </h1>
 
-        <p>Lugar para poner la barra de búsqueda</p>
-    
+           <input type="search" placeholder="Buscar productos" class="barra-position">
+           <i class="fas fa-search"></i>
+
+          
             <h2 class="copy-header">
                <i class="fa-solid fa-hand-holding-dollar">              
-               </i>Comprá en cuotas y sin tarjeta de crédito</p>
+               </i>  Comprá en cuotas y sin tarjeta de crédito</p>
              </h2>
         </div>
 
-    <nav class="main-navbar">
+        <nav class="main-navbar">
         <ul class="left-navbar">
             <li><a href="#"> Ofertas </a></li>
             <li><a href="#"> Tiendas Oficiales </a></li>
@@ -38,15 +42,18 @@
             <li><a href="#"> Ayuda </a></li>
         </ul>
         <ul class="right-navbar">    
-            <li><a href="#"> Creá tu cuenta  <i class="fa-regular fa-id-card"></i> </a></li>
-            <li><a href="#"> Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li><a class="nav-link" href="/register"> Creá tu cuenta  <i class="fa-regular fa-id-card"></i> </a></li>
+            <li><a href="/login"> Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
             <li><a href="#"> Mis compras  <i class="fa-solid fa-basket-shopping"></i> </a></li>          
         </ul>
-    </nav>
-    <div class="burger-menu">
+        </nav>
+
+  
+        <div class="burger-menu">
         <i class="fas fa-bars"></i>
-    </div>
-    </header>
+        </div>
+</header>
+
     <img class="w-100" src="/images/img-home-banner.jpg" alt="Promoción fiestas" />
 
 
@@ -66,29 +73,37 @@
     </form>
 
     <footer>
-        <i class="fa-solid fa-credit-card"></i>
-        <h2>
-            Pagá con tarjeta o en efectivo
-        </h2>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-         <i class="fa-solid fa-gift"></i>
+        <div class="w-100 my-1">
+            <i class="fa-solid fa-credit-card icon-footer"></i>
+            <h2>
+                Pagá con tarjeta o en efectivo
+            </h2>
+        
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            
+            </div>
+    
+            <div class="w-100 my-1">
+            <i class="fa-solid fa-gift icon-footer"></i>
+            <h2>
+                Envío gratis desde $ 2.500
+            </h2>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+    
+            <div class="w-100 my-1">
+            <i class="fa-solid fa-user-shield icon-footer"></i>
+            <h2>
+                Seguridad, de principio a fin
+            </h2>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
          
-        <h2>
-            Envío gratis desde $ 2.500
-        </h2>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-
-        <i class="fa-solid fa-user-shield"></i>
-        <h2>
-            Seguridad, de principio a fin
-        </h2>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
-        <h2>
-            Copyright © 1999-2023 MercadoLiebre S.R.L.
-        </h2>                         
+            
+        </div>  
+                        
     </footer>
 </body>
 </html>
